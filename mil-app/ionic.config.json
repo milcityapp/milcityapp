@@ -1,0 +1,9 @@
+{
+  "name": "MIL",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "2f876db7"
+}

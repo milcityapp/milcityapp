@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button href="bibliotecas-mil-en">
+      <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+    <ion-title>Add Library</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="ion-padding">
+<h1>Library inclusion request</h1>
+<p> fill the following information requested</p>
+<form onsubmit="processForm(event)">
+        <ion-list lines="full" class="ion-no-margin ion-no-padding">
+          <ion-item>
+            <ion-label position="stacked">Library name<ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Address<ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Why do you think this library has MIL concepts?</ion-label>
+            <ion-textarea></ion-textarea>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Link to online collection</ion-label>
+            <ion-input type="text" oninput="handleLastNameValue(event)"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Link to academic papers page</ion-label>
+            <ion-input type="text" oninput="handleLastNameValue(event)"></ion-input>
+          </ion-item>
+        </ion-list>
+
+        <div class="ion-padding">
+          <ion-button expand="block" type="submit" class="ion-no-margin">Submit for review</ion-button>
+        </div>
+      </form>
+</ion-content>

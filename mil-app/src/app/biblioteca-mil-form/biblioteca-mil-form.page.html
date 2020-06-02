@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button href="bibliotecas-mil">
+      <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+    <ion-title>Inclusão de Bibliotecas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="ion-padding">
+<h1>Formulário de Inclusão de Bibliotecas</h1>
+<p> Preencha abaixo com as informações requeridas</p>
+<form onsubmit="processForm(event)">
+        <ion-list lines="full" class="ion-no-margin ion-no-padding">
+          <ion-item>
+            <ion-label position="stacked">Nome da Biblioteca <ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Endereço<ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Porque, na sua opinião, essa biblioteca possui os conceitos MIL?</ion-label>
+            <ion-textarea></ion-textarea>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Link para o acervo online</ion-label>
+            <ion-input type="text" oninput="handleLastNameValue(event)"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Link para trabalhos acadêmicos</ion-label>
+            <ion-input type="text" oninput="handleLastNameValue(event)"></ion-input>
+          </ion-item>
+        </ion-list>
+
+        <div class="ion-padding">
+          <ion-button expand="block" type="submit" class="ion-no-margin">Submeter para avaliação</ion-button>
+        </div>
+      </form>
+</ion-content>
